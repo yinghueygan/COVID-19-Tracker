@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+	background-color: #FAFOE6;
+  width: 100%;
+  min-height: 100vh;
+  background: url('../img/home-bg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+/* css for home page */
+.home{
+    min-height: 100vh;
+    background: url(../img/home-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home .content{
+  padding-top: 35%;
+  padding-left: 35%;
+  text-align: left;
+}
+
+.home .content span{
+    color:#fa9805;
+    font-size: 20px;
+}
+
+.home .overall .content h3{
+    color: #244361;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.home .home_title{
+  margin: 20%;
+}
+
+.button{
+  font-weight: bold;
+    font-size: 17px;
+    margin-top: 5%;
+    display: inline-block;
+    background: tomato;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.button:hover{
+    color: white;
+    background: #244361;
+}
+
+/* css for enable two items align place in one line */
+.overall{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+
+/* css for navigation bar*/
+.nav_bar{
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	background-color: #fafad2;
+	border-radius: 0px;
+	padding: 0px 100px;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+label.logo{
+	color: #2F4F4F;
+    font-size: 25px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+label.logo span{
+	color: #2F4F4F;
+
+}
+
+ul{
+	list-style-type: none;
+    float: right;
+	margin-right: 5px;
+}
+
+ul li{
+    display: inline-block;
+    font-weight: bold;
+    line-height: 80px;
+    margin:0 5px;
+}
+
+ul li a{
+    color: #2F4F4F;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 20px;
+    border-radius: 3px;
+}
+
+
+/*affect button font color*/
+a:hover{
+    background-color: #d2b48c;
+    text-decoration: none;
+}
+
+/* css for case title */
+.title{
+    text-align: center;
+    font-size: 18pt;
+    font-weight: bold;
+}
+.status_data .cases{
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bold;
+}
+.recovered .cases{
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bold;
+    color: #009688;
+}
+.deaths .cases{
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bold;
+    color: #f44336;
+}
+.new_cases{
+    text-align: center;
+    font-size: 15pt;
+}
+
+/* css for covid19 status box */
+#covid_status .status_box{
+	border: 1px solid #b6b3b3;
+	width: 100%;
+  columns: 12%;
+}
+
+#covid_status .status_box h5{
+	text-align: center;
+	background: tomato;
+	color: #fff;
+	border: none;
+	font-weight: 700;
+	font-size: 20px;
+  padding: 10px;
+}
+
+#covid_status .date_status{
+  font-size: 15px;
+  color: grey;
+  text-align: right;
+  margin: 5%;
+}
+
+#covid_status .status_box div{
+	padding: 5px;
+}
+
+#covid_status h6{
+	font-size: 18px;
+}
+
+#covid_status p{
+	font-size: 18px;
+}
+
+/* css for search and select box */
+.center{
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 200px;
+}
+
+.opt_box {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.opt_box .opt_container {
+  background: #808080;
+  border-radius: 5px;
+  width: 23.7%;
+  max-height: 0;
+  margin-top: 4%;
+  margin-left: 0.2%;
+  opacity: 0;
+  transition: all 0.4s;
+  overflow: hidden;
+  order: 1;
+  position: fixed;
+}
+
+.chart_title{
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 20%;
+  position:relative;
+  right: 15%;
+}
+
+.opt a{
+  color: white;
+  font-weight: bold;
+}
+
+.selected {
+  background: #2f4f4f;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+  order: 0;
+  margin-bottom: 10px;
+}
+
+.selected img{
+  padding-left: 135px;
+}
+
+.opt_box .opt_container.active {
+  max-height: 250px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+/* css for scrollbar */
+.opt_box .opt_container::-webkit-scrollbar {
+  width: 8px;
+  background: #0d141f;
+  border-radius: 0 5px 5px 0;
+}
+
+.opt_box .opt_container::-webkit-scrollbar-thumb {
+  background: #c5c6d0;
+  border-radius: 0 5px 5px 0;
+}
+
+.selected, .opt_box .opt{
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.opt_box .opt .radio {
+  display: none;
+}
+
+.opt_box .opt:hover {
+  background: #414b57;
+}
+
+/* css for chart */
+.chart_layout {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.chart_inside {
+  width: 800px;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid 3px;
+  border-color: #006040;
+  background: #f5fffa;
+}
+
+/* css for protection */
+.protect .card_container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.protect .card_container .card{
+    background: white;
+    text-align: center;
+    border: 0.2px solid rgba(0,0,0,.1);
+    padding: 15px;
+    margin: 15px;
+    width: 28%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.protect .card_container .card img{
+    height: 55%;
+    width: 35%;
+}
+
+.protect .card_container .card h3{
+    font-size: 23px;
+    color: grey;
+    padding: 10px 0;
+}
+
+.protect .card_container .card:hover{
+    transform:translateY(-15px);
+}
+
+/* css for spreading */
+.spread_title{
+    text-align: center;
+    padding:1rem;
+}
+
+.spread_title span{
+    color: tomato;
+}
+
+.spread .spread_img{
+    height: 450px;
+    width: 100%;
+    background:url('../img/map.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* css for footer */
+footer{
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: black;
+  background-color: #fafad2;
+}
+
+.footer_content{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer_content h4{
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.footer_content h5{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer_bottom{
+  color: black;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer_bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;;
+}
