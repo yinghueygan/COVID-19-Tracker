@@ -1,5 +1,7 @@
 # COVID-19-Tracker
-A COVID-19 Tracker system is developed with HTML, CSS, PHP and JavaScript via Atom. Based on the date, the system is able to report the total number of confirmed cases, recovered cases and deaths cases on a daily basis. Other than that, the daily confirmed cases, recovered cases and deaths cases are also displayed. In addition, either the COVID-19 cases or death cases, the system can create a statistic and present them in a line graph according to date. In this way, users can have a better understanding of the situation and get to know the severity of COVID-19 in Malaysia. Apart from showing the COVID-19 cases and death cases in Malaysia, the system allows users to obtain COVID-19 cases and death cases by states. 
+A COVID-19 Tracker system is developed with HTML, CSS, PHP, and JavaScript via Atom. Based on the date, the system is able to report the total number of confirmed cases, recovered cases, and deaths cases on a daily basis. Other than that, the daily confirmed cases, recovered cases, and deaths cases are also displayed. In addition, either the COVID-19 cases or death cases, the system can create a statistic and present them in a line graph according to date. In this way, users can have a better understanding of the situation and get to know the severity of COVID-19 in Malaysia. Apart from showing the COVID-19 cases and death cases in Malaysia, the system allows users to obtain COVID-19 cases and death cases by states. 
+
+## COVID-19 data retrieved from Ministry of Health Malaysia
 
 ## Home Page:
 ![image](https://github.com/yinghueygan/COVID-19-Tracker/assets/90696965/bbdb8943-3977-4dcb-9ce8-672419e60af9)
